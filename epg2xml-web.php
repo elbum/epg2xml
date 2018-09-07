@@ -914,7 +914,7 @@ function getWeb($url, $params, $method) {
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, True);
     curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $GLOBALS['timeout']);
-    curl_setopt($ch, CURLOPT_TIMEOUT, $GLOBALS['req_timeout']);
+	curl_setopt($ch, CURLOPT_TIMEOUT, $GLOBALS['req_timeout']);
     curl_setopt($ch, CURLOPT_HEADER, False);
     curl_setopt($ch, CURLOPT_FAILONERROR, True);
     curl_setopt($ch, CURLOPT_USERAGENT, $GLOBALS['ua']);
